@@ -1,7 +1,5 @@
 import Reveal from './Reveal'
 
-const tags = ['Java', 'Python', 'React', 'Angular', 'Spring Boot', 'AWS', 'Anomaly Detection', 'CI/CD', 'TypeScript', 'Scikit-Learn']
-
 export default function About() {
   return (
     <section id="about" className="section">
@@ -28,11 +26,6 @@ export default function About() {
           clarity under pressure: clean state, honest loading states, and UI that never lies about what the
           system is doing.
         </p>
-        <div className="about-tags">
-          {tags.map((t) => (
-            <span key={t} className="chip" data-hover>{t}</span>
-          ))}
-        </div>
       </Reveal>
     </section>
   )
