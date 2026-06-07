@@ -117,6 +117,7 @@ export const personalProjects = [
   {
     name: 'Maya Care — Elderly Assistance Web Application',
     tag: 'FULL-STACK · SOCIAL IMPACT',
+    github: 'https://github.com/itika20/cfg-maya-care',
     stack: ['Node.js', 'Express', 'MongoDB'],
     description:
       'A full-stack elderly-care intake portal built for the Maya Care nonprofit during JPMorgan’s Code for Good, backed by a Node.js / Express API over MongoDB. The platform lets staff capture, validate and securely store patient contact and health information, replacing manual paperwork with a structured, searchable record system.',
