@@ -101,6 +101,7 @@ export const personalProjects = [
   {
     name: 'Finsight',
     tag: 'FULL-STACK · AI',
+    github: 'https://github.com/itika20/FinSight',
     stack: ['GPT-4o', 'PostgreSQL', 'Docker', 'JWT'],
     description:
       'A full-stack personal finance platform that parses bank and credit-card PDF statements with GPT-4o, auto-categorizes transactions through a 4-layer ML pipeline (regex, VPA memory, heuristics, fallback) and visualizes spending with interactive dashboards. Includes JWT authentication and a goal-planning engine that computes required monthly savings against real spending data, all served by a Dockerized backend over a PostgreSQL data store.',
@@ -108,6 +109,7 @@ export const personalProjects = [
   {
     name: 'Driver Drowsiness Detection System',
     tag: 'COMPUTER VISION',
+    github: 'https://github.com/itika20/Driver-Drowsiness-Detection-System',
     stack: ['Python', 'OpenCV', 'dlib', 'NumPy'],
     description:
       'A computer-vision safety system that streams live webcam frames through dlib’s 68-point facial-landmark detector, computing eye-aspect-ratio (EAR) and mouth-aspect-ratio per frame to flag prolonged eye closure and yawning. Sustained sub-threshold EAR triggers an audio alarm, alerting fatigued drivers before micro-sleep sets in.',
@@ -122,6 +124,7 @@ export const personalProjects = [
   {
     name: 'Path Finder Visualizer',
     tag: 'ALGORITHMS',
+    github: 'https://github.com/itika20/PathFinder',
     stack: ['Python', 'A* Search', 'Pygame'],
     description:
       'An interactive Pygame grid that animates the A* search algorithm in real time, driving node expansion with a Manhattan-distance heuristic and a priority-queue-backed open/closed set. Users place walls and weighted obstacles on the fly and watch the frontier explore, backtrack and reconstruct the optimal shortest path step by step.',

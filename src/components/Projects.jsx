@@ -1,3 +1,4 @@
+import { Github } from 'lucide-react'
 import { personalProjects } from '../data'
 import Reveal from './Reveal'
 
@@ -6,6 +7,18 @@ function Project({ p, i }) {
     <Reveal className="proj panel" delay={i * 0.07}>
       <div className="proj-top">
         <span className="proj-tag">{p.tag}</span>
+        {p.github && (
+          <a
+            href={p.github}
+            target="_blank"
+            rel="noreferrer"
+            className="proj-link"
+            data-hover
+            aria-label={`${p.name} on GitHub`}
+          >
+            <Github size={16} />
+          </a>
+        )}
       </div>
       <h3 className="proj-name">{p.name}</h3>
       <p className="proj-desc">{p.description}</p>
