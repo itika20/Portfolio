@@ -24,7 +24,7 @@ export const profile = {
 export const profileStats = [
   { k: 'role', v: 'Software Engineer II' },
   { k: 'company', v: 'JP Morgan Chase' },
-  { k: 'domain', v: 'Margin Risk · Trading' },
+  { k: 'domain', v: 'Wealth Management' },
   { k: 'pursuing', v: 'M.Tech AI/ML · BITS' },
   { k: 'location', v: 'Mumbai, IN' },
 ]
