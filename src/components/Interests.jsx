@@ -29,7 +29,7 @@ export default function Interests() {
   return (
     <section id="interests" className="section">
       <Reveal className="section-head">
-        <span className="section-index">07</span>
+        <span className="section-index">06</span>
         <h2 className="section-title">Other Interests</h2>
         <span className="section-rule" />
       </Reveal>

@@ -5,7 +5,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Experience from './components/Experience'
 import Skills from './components/Skills'
-import { WorkProjects, PersonalProjects } from './components/Projects'
+import { PersonalProjects } from './components/Projects'
 import Interests from './components/Interests'
 import Education from './components/Education'
 import Contact from './components/Contact'
@@ -25,7 +25,6 @@ export default function App() {
         <About />
         <Experience />
         <Skills />
-        <WorkProjects />
         <PersonalProjects />
         <Education />
         <Interests />

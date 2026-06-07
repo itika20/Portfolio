@@ -6,7 +6,7 @@ export default function Education() {
   return (
     <section id="education" className="section">
       <Reveal className="section-head">
-        <span className="section-index">06</span>
+        <span className="section-index">05</span>
         <h2 className="section-title">Education & Credentials</h2>
         <span className="section-rule" />
       </Reveal>

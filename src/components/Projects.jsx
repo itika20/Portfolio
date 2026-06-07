@@ -1,4 +1,4 @@
-import { workProjects, personalProjects } from '../data'
+import { personalProjects } from '../data'
 import Reveal from './Reveal'
 
 function Project({ p, i }) {
@@ -44,14 +44,8 @@ function ProjectSection({ id, index, title, items }) {
   )
 }
 
-export function WorkProjects() {
-  return (
-    <ProjectSection id="work" index="04" title="Work @ JP Morgan" items={workProjects} />
-  )
-}
-
 export function PersonalProjects() {
   return (
-    <ProjectSection id="projects" index="05" title="Built for Myself" items={personalProjects} />
+    <ProjectSection id="projects" index="04" title="Projects" items={personalProjects} />
   )
 }

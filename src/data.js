@@ -12,12 +12,12 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/itika-bhattacharjee/',
   tagline: [
     'Building scalable financial systems',
-    'Real-time risk workflows',
+    'Near-real-time risk workflows',
     'Data-driven UI at the edge of markets',
     'Anomaly detection in production',
   ],
   summary:
-    'Software Engineer with 2.5 years building scalable financial systems and real-time risk workflows at JP Morgan Chase. I design and ship the UI that operations teams trust during volatile markets — backed by Java, Python and cloud-native AWS systems. Currently pursuing an M.Tech in AI/ML at BITS while building applied ML expertise in anomaly detection.',
+    'Software Engineer with 2.5 years building scalable financial systems and near-real-time risk workflows at JP Morgan Chase. I design and ship the UI that operations teams trust during volatile markets — backed by Java, Python and cloud-native AWS systems. Currently pursuing an M.Tech in AI/ML at BITS while building applied ML expertise in anomaly detection.',
 }
 
 // Quick-facts shown in the hero terminal (profile.json)
@@ -36,10 +36,10 @@ export const experience = [
     period: "Feb '26 — Present",
     status: 'PRESENT',
     current: true,
-    summary:
-      'Enhancing low-equity determination logic by incorporating additional risk parameters into the existing algorithm — improving account-classification accuracy and strengthening margin risk controls.',
     points: [
-      'Currently architecting risk-parameter enhancements that sharpen account classification and margin risk controls.',
+      'Enhancing the notification systems by automatically triggering tailored client and advisor notifications whenever a draw or pay request is raised on a Securities Based Lending (SBL) loan, **closing a long-standing visibility gap** between lending operations, advisors and clients.',
+      'Owned the data layer end to end for draw and pay communications, designing the schema and table architecture and governing **schema versioning through Liquibase**, with migrations executed automatically via Lambda-invoked deployments.',
+      'Enhanced the low-equity determination algorithm by incorporating additional risk parameters, sharpening **account-classification accuracy** and strengthening margin-risk controls.',
     ],
   },
   {
@@ -48,14 +48,14 @@ export const experience = [
     period: "Aug '23 — Jan '26",
     status: 'SHIPPED',
     current: false,
-    summary:
-      'Owned end-to-end margin risk workflows and led the UI for a real-time risk monitoring dashboard used to track exposure and execute near-real-time liquidations.',
     points: [
-      'Built real-time notification systems delivering ~300 daily margin call alerts (~$500K monthly notional), ensuring timely risk communication in trading environments.',
-      'Developed and led the UI for a real-time risk monitoring dashboard — enabling ops teams to track exposure and execute near-real-time liquidations during volatile markets.',
-      'Owned the full development cycle and deployed a Python anomaly-detection system to production, flagging abnormal margin-call patterns for early issue detection.',
-      'Architected cloud-native systems on AWS (ECS, Lambda) with CloudWatch + Splunk monitoring, improving reliability and reducing manual intervention.',
-      'Streamlined CI/CD pipelines and grew automated test coverage for risk-critical services.',
+      'Owned end-to-end margin-risk workflows and led the UI for a near-real-time risk monitoring dashboard used to track exposure and execute **near-real-time liquidations**.',
+      'Built real-time notification systems delivering **~300 daily margin call alerts** (~$500K monthly notional), ensuring timely risk communication in trading environments.',
+      'Engineered a parallel-processing batch pipeline over **5M+ cumulative SBL records daily**, replacing sequential processing with parallel streams to dramatically cut batch run time for welcome-email notifications.',
+      'Owned the full development cycle and **deployed a Python anomaly-detection system to production**, flagging abnormal margin-call patterns for early issue detection.',
+      'Provisioned resilient **multi-region infrastructure** (us-east-1 / us-east-2) with active / hot-passive failover orchestrated through Terraform, guaranteeing high availability and seamless disaster recovery.',
+      'Architected **cloud-native systems on AWS** (ECS, Lambda) with CloudWatch and Splunk monitoring, improving reliability and reducing manual intervention.',
+      'Streamlined CI/CD pipelines and **grew automated test coverage** for risk-critical services.',
     ],
   },
   {
@@ -64,11 +64,10 @@ export const experience = [
     period: "Feb '23 — Jul '23",
     status: 'SHIPPED',
     current: false,
-    summary:
-      'Delivered an internal advisor workflow for capturing and tracking margin-call curing plans, cutting resolution time from 5 days to 3.',
     points: [
-      'Built an internal workflow for advisors to capture and track margin-call curing plans — improving cross-team visibility and cutting resolution time from 5 days to 3.',
-      'Built end-to-end and component-level automated testing, reducing regression issues for a risk-sensitive environment.',
+      'Delivered an internal advisor workflow for capturing and tracking margin-call curing plans, **cutting resolution time from 5 days to 3**.',
+      'Built the workflow enabling advisors to capture and track margin-call curing plans, **improving cross-team visibility** across operations.',
+      'Built end-to-end and component-level automated testing, **reducing regression issues** for a risk-sensitive environment.',
     ],
   },
 ]
@@ -81,7 +80,7 @@ export const skills = [
   },
   {
     category: 'Frameworks & Libraries',
-    items: ['React', 'Angular', 'Spring Boot', 'NumPy', 'Pandas', 'Scikit-Learn', 'OpenCV'],
+    items: ['React', 'Angular', 'Spring Boot', 'Node.js', 'Express', 'NumPy', 'Pandas', 'Scikit-Learn', 'OpenCV'],
   },
   {
     category: 'Cloud',
@@ -89,47 +88,43 @@ export const skills = [
   },
   {
     category: 'Tools & Testing',
-    items: ['JUnit', 'Selenium', 'Cucumber', 'Hoverfly', 'Jenkins', 'Splunk'],
+    items: ['JUnit', 'Selenium', 'Cucumber', 'Hoverfly', 'Jenkins', 'Splunk', 'Docker', 'PostgreSQL', 'JWT'],
   },
   {
     category: 'AI & Productivity',
-    items: ['GitHub Copilot', 'Prompt Engineering', 'LLM-Assisted Development'],
-  },
-]
-
-// Work shipped at JP Morgan Chase
-export const workProjects = [
-  {
-    name: 'Real-Time Risk Monitoring Dashboard',
-    tag: 'PRODUCTION · JPMC',
-    stack: ['Angular', 'TypeScript', 'AWS', 'WebSocket'],
-    description:
-      'Led the UI for a real-time dashboard that lets operations teams track exposure and execute near-real-time liquidations, directly supporting loss mitigation during volatile markets.',
-  },
-  {
-    name: 'Margin-Call Anomaly Detection',
-    tag: 'PRODUCTION · JPMC',
-    stack: ['Python', 'Scikit-Learn', 'AWS Lambda', 'CloudWatch'],
-    description:
-      'A production anomaly-detection system that monitors margin-call ticket generation, automatically flagging abnormal patterns to enable early issue detection and improve reliability.',
+    items: ['GPT-4o', 'GitHub Copilot', 'Prompt Engineering', 'LLM-Assisted Development'],
   },
 ]
 
 // Personal projects built outside of work
 export const personalProjects = [
   {
+    name: 'Finsight',
+    tag: 'FULL-STACK · AI',
+    stack: ['GPT-4o', 'PostgreSQL', 'Docker', 'JWT'],
+    description:
+      'A full-stack personal finance platform that parses bank and credit-card PDF statements with GPT-4o, auto-categorizes transactions through a 4-layer ML pipeline (regex, VPA memory, heuristics, fallback) and visualizes spending with interactive dashboards. Includes JWT authentication and a goal-planning engine that computes required monthly savings against real spending data, all served by a Dockerized backend over a PostgreSQL data store.',
+  },
+  {
     name: 'Driver Drowsiness Detection System',
     tag: 'COMPUTER VISION',
-    stack: ['Python', 'OpenCV', 'dlib'],
+    stack: ['Python', 'OpenCV', 'dlib', 'NumPy'],
     description:
-      'A facial-recognition safety system that alerts drivers of drowsiness or fatigue by calculating eye-aspect-ratio and detecting yawning in real time.',
+      'A computer-vision safety system that streams live webcam frames through dlib’s 68-point facial-landmark detector, computing eye-aspect-ratio (EAR) and mouth-aspect-ratio per frame to flag prolonged eye closure and yawning. Sustained sub-threshold EAR triggers an audio alarm, alerting fatigued drivers before micro-sleep sets in.',
+  },
+  {
+    name: 'Maya Care — Elderly Assistance Web Application',
+    tag: 'FULL-STACK · SOCIAL IMPACT',
+    stack: ['Node.js', 'Express', 'MongoDB'],
+    description:
+      'A full-stack elderly-care intake portal built for the Maya Care nonprofit during JPMorgan’s Code for Good, backed by a Node.js / Express API over MongoDB. The platform lets staff capture, validate and securely store patient contact and health information, replacing manual paperwork with a structured, searchable record system.',
   },
   {
     name: 'Path Finder Visualizer',
     tag: 'ALGORITHMS',
     stack: ['Python', 'A* Search', 'Pygame'],
     description:
-      'A dynamic visualization tool using the A* search algorithm to determine the shortest path between two points — built to make navigation logic intuitive.',
+      'An interactive Pygame grid that animates the A* search algorithm in real time, driving node expansion with a Manhattan-distance heuristic and a priority-queue-backed open/closed set. Users place walls and weighted obstacles on the fly and watch the frontier explore, backtrack and reconstruct the optimal shortest path step by step.',
   },
 ]
 

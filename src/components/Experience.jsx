@@ -1,6 +1,15 @@
 import { experience } from '../data'
 import Reveal from './Reveal'
 
+// Render **bold** segments as <strong> to highlight impact keywords
+function withImpact(text) {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
+    part.startsWith('**') && part.endsWith('**')
+      ? <strong key={i} className="impact">{part.slice(2, -2)}</strong>
+      : part
+  )
+}
+
 export default function Experience() {
   return (
     <section id="experience" className="section">
@@ -26,14 +35,11 @@ export default function Experience() {
 
             <div className="exp-right">
               <h3 className="exp-role">{e.role}</h3>
-              <p className="exp-summary">{e.summary}</p>
-              {e.points.length > 1 && (
-                <ul className="exp-points">
-                  {e.points.map((p, idx) => (
-                    <li key={idx}>{p}</li>
-                  ))}
-                </ul>
-              )}
+              <ul className="exp-points">
+                {e.points.map((p, idx) => (
+                  <li key={idx}><span>{withImpact(p)}</span></li>
+                ))}
+              </ul>
             </div>
           </Reveal>
         ))}
