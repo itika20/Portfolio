@@ -455,14 +455,14 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
   margin-bottom: 8px;
 }
-.exp-summary { color: var(--text-dim); font-size: 0.96rem; margin-bottom: 16px; }
-.exp-points { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.exp-points { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
 .exp-points li {
   display: flex;
   gap: 11px;
   color: var(--text-dim);
   font-size: 0.93rem;
 }
+.impact { color: var(--text); font-weight: 600; }
 .exp-points li::before {
   content: '▹';
   color: var(--green);
@@ -567,6 +567,30 @@ a { color: inherit; text-decoration: none; }
   font-size: 0.68rem;
   letter-spacing: 0.1em;
   color: var(--text-faint);
+}
+.proj-code {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 14px;
+  padding: 4px 9px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
+  color: var(--text-dim);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.proj-code:hover {
+  color: var(--green);
+  border-color: var(--green);
+}
+.proj-code-arrow {
+  transition: transform 0.2s ease;
+}
+.proj-code:hover .proj-code-arrow {
+  transform: translate(2px, -2px);
 }
 .risk-pill {
   display: inline-flex;

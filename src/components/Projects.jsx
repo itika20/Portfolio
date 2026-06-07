@@ -1,4 +1,5 @@
-import { workProjects, personalProjects } from '../data'
+import { Github, ArrowUpRight } from 'lucide-react'
+import { personalProjects } from '../data'
 import Reveal from './Reveal'
 
 function Project({ p, i }) {
@@ -14,6 +15,20 @@ function Project({ p, i }) {
           <span key={s}>{s}</span>
         ))}
       </div>
+      {p.github && (
+        <a
+          href={p.github}
+          target="_blank"
+          rel="noreferrer"
+          className="proj-code"
+          data-hover
+          aria-label={`View ${p.name} source on GitHub`}
+        >
+          <Github size={13} />
+          View Code
+          <ArrowUpRight size={12} className="proj-code-arrow" />
+        </a>
+      )}
     </Reveal>
   )
 }
@@ -44,14 +59,8 @@ function ProjectSection({ id, index, title, items }) {
   )
 }
 
-export function WorkProjects() {
-  return (
-    <ProjectSection id="work" index="04" title="Work @ JP Morgan" items={workProjects} />
-  )
-}
-
 export function PersonalProjects() {
   return (
-    <ProjectSection id="projects" index="05" title="Built for Myself" items={personalProjects} />
+    <ProjectSection id="projects" index="04" title="Projects" items={personalProjects} />
   )
 }

@@ -66,7 +66,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          Software Engineer & UI Developer at JP Morgan Chase. I build the real-time
+          Software Engineer & UI Developer at JP Morgan Chase. I build the near-real-time
           interfaces and risk systems that operations teams trust when markets move.
         </motion.p>
 
